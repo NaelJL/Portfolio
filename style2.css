@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'paint';
+    src: url('./fonts/Paint-hand_limited-set.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'louis';
+    src: url('./fonts/Louis\ George\ Cafe.ttf') format('truetype');
+}
+
+body {
+    height: 100%;
+    margin: 10%;
+    background-image: url('./images/ekaterina-novitskaya-gLroHoWh_as-unsplash.jpg');
+    color: rgb(210, 209, 209);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    font-family: 'louis';
+    font-size: 1.3em;
+}
+a {
+    color:rgb(210, 209, 209);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: line-through 2px white;
+}
+.projects {
+    text-align: right;
+    margin-top: 20%;
+}
+strong {
+    font-size: 1.7em;
+    font-family: 'paint';
+}
+.about {
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: justify;
+}
+.question {
+    text-align: right;
+}
+.contact {
+    margin-top: 40%;
+   display: flex;
+   justify-content: space-around; 
+}
