@@ -9,7 +9,6 @@
 
 body {
     height: 100%;
-    margin: 10%;
     background-image: url('./images/ekaterina-novitskaya-gLroHoWh_as-unsplash.jpg');
     color: rgb(210, 209, 209);
     display: grid;
@@ -27,22 +26,30 @@ a:hover {
 }
 .projects {
     text-align: right;
-    margin-top: 20%;
+    margin-top: 400px;
+    margin-right: 10%;
 }
 strong {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-family: 'paint';
 }
 .about {
+    margin-top: 10%;
     margin-right: 25%;
     margin-left: 25%;
-    text-align: justify;
+    line-height: 1.5em;
 }
 .question {
+    margin-right: 25%;
+    margin-left: 25%;
     text-align: right;
 }
 .contact {
-    margin-top: 40%;
+    margin-top: 600px;
    display: flex;
    justify-content: space-around; 
+}
+
+@media only screen and (max-width: 500px) {
+    
 }
