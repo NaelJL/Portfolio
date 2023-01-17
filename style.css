@@ -9,23 +9,22 @@
 
 /* Commun ----------------------------------------------------------------------------------------------------------------------- Commun */
 body {
-    height: 100%;
+    min-height: 75vh;
     background-image: url('./images/ekaterina-novitskaya-gLroHoWh_as-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     color: rgb(198, 198, 198);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
     font-family: 'louis';
-    font-size: 1.3em;
+    font-size: clamp(12px, 4vw, 22px);
     text-shadow: 1px 1px 0px black;
 }
 .return_index {
-    width: 20px;
-    padding-top: 30px;
-    padding-left: 30px;
+    width: clamp(17px, 2vw, 20px);
+    padding-top: clamp(5px, 2vw, 35px);
+    padding-left: clamp(5px, 2vw, 35px);
 }
 strong {
-    font-size: 1.6em;
+    font-size: clamp(27px, 4.5vw, 37px);
     font-family: 'paint';
 }
 .bold {
@@ -41,129 +40,64 @@ a:hover {
 
 /* Page principale, index -------------------------------------------------------------------------------------------------------- Index */
 .index {
-    overflow: hidden;
-    margin: 10%;
+    margin: clamp(8%, 5vw, 25%) clamp(6%, 5vw, 15%) clamp(3%, 5vw, 5%) clamp(6%, 5vw, 15%);
     color: rgb(178, 178, 178);
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 60% 20% 20%;
+    position: relative;
 }
+ol {
+    list-style-type: none;
+    font-size: clamp(15px, 3vw, 22px);
+}
+ol li {
+    margin-bottom: 20px;
+    text-align: right;
+}
+ol a:hover {
+    text-shadow: 5px 5px rgb(255, 255, 255);
+    color: rgba(210, 209, 209, 0);
+    text-decoration: none;
+}
+#text-bottom {
+    position: absolute;
+    bottom: 0;
+    min-height: clamp(25%, 60%, 70%);
+}  
 h1 {
     font-family: 'paint';
-    font-size: 4rem;
-    padding-top: 50px;
-    grid-row : 2;
-    grid-column: 1;
+    font-size: clamp(37px, 8vw, 67px);
 }
 h2 {
-    font-size: 1.2rem;
-    padding-top: 50px;
-    grid-row: 3;
-    grid-column: 1;
+    font-size: clamp(10px, 3vw, 20px);
+    padding-top: 15px;
 }
 h2 a:hover {
     text-decoration: none;
     color: rgba(210, 209, 209, 0);
     text-shadow: 20px 0px white;
 }
-nav {
-    list-style-type: none;
-    font-size: 1.3rem;
-    grid-column: 2;
-    grid-row: 1;
-}
-nav li {
-    margin-bottom: 20px;
-    text-align: right;
-}
-nav a:hover {
-    text-shadow: 5px 5px rgb(255, 255, 255);
-    color: rgba(210, 209, 209, 0);
-    text-decoration: none;
-}
 
 /* Pages secondaires --------------------------------------------------------------------------------------------------- Pages secondaires */
 .projects {
     text-align: right;
-    margin: 350px 10% auto 10%;
+    margin: clamp(350px, 5vw, 10px) 10% auto 10%;
 }
 .about {
-    margin-top: 5%;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin: clamp(2%, 2vw, 5%) clamp(10%, 20%, 25%) auto clamp(10%, 20%, 25%);
     line-height: 1.7em;
 }
 .question {
-    margin-right: 25%;
-    margin-left: 25%;
     text-align: right;
 }
 .contact {
     margin-top: 600px;
-   display: flex;
-   justify-content: space-around; 
+    display: flex;
+    justify-content: space-around; 
 }
 .why {
-    margin: 5px 20% auto 20%;
-    line-height: 1.5em;
+    margin: 0px clamp(10%, 20vw, 18%) clamp(20px, 5vh, 50px) clamp(10%, 20vw, 18%);
+    line-height: 1.45em;
 }
 .why li {
     margin-bottom: 7px;
-    margin-left: 20px;
-}
-
-/* Responsive ----------------------------------------------------------------------------------------------------------------- Responsive */
-@media only screen and (max-width: 500px) {
-
-    /* Page principale */
-    .index {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 38% 36%;
-    }
-    h1 {
-        font-size: 3rem;
-        padding-top: 30px;
-        grid-row: 2;
-    }
-    h2 {
-        font-size: 1em;
-        padding-top: 20px;
-        grid-row: 3;
-    }
-    nav {  
-        padding-top: 30px;
-        font-size: 1.1em;
-        grid-column: 1;
-        grid-row: 1;
-    }
-    nav li {
-        margin-bottom: 15px;
-    }
-
-    /* Pages secondaires */
-    body {
-        font-size: 1.2em;
-    }
-    .return_index {
-        width: 17px;
-        padding-top: 5px;
-        padding-left: 5px;
-    }
-    .project {
-        margin: 0px 10% auto 10%;
-    }
-    .about {
-        margin: 15px 10% auto 10%;
-    }
-    .question {
-        margin-bottom: 0px;
-        padding-bottom: 10px;
-    }
-    .why {
-        margin: 10px 10% 20px 10%;
-    }
-    .why li {
-        margin-left: 10px;
-    }
+    margin-left: clamp(10px, 3vh, 20px);
 }
