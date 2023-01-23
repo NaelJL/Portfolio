@@ -71,15 +71,19 @@ h2 {
     padding-top: 15px;
 }
 h2 a:hover {
+    padding-left: 10px;
     text-decoration: none;
-    color: rgba(210, 209, 209, 0);
-    text-shadow: 20px 0px white;
+    color: rgb(255, 255, 255);
+}
+.arrow {
+    width: 15px;
+    margin-left: 10px;
 }
 
 /* Pages secondaires --------------------------------------------------------------------------------------------------- Pages secondaires */
 .projects {
     text-align: right;
-    margin: clamp(350px, 5vw, 10px) 10% auto 10%;
+    margin: 20% 10% auto 10%;
 }
 .about {
     margin: clamp(2%, 2vw, 5%) clamp(10%, 20%, 25%) auto clamp(10%, 20%, 25%);
