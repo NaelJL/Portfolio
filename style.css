@@ -41,7 +41,6 @@ a:hover {
 /* Page principale, index -------------------------------------------------------------------------------------------------------- Index */
 .index {
     margin: clamp(8%, 5vw, 25%) clamp(6%, 5vw, 15%) clamp(3%, 5vw, 5%) clamp(6%, 5vw, 15%);
-    color: rgb(178, 178, 178);
     position: relative;
 }
 ol {
@@ -83,7 +82,7 @@ h2 a:hover {
 /* Pages secondaires --------------------------------------------------------------------------------------------------- Pages secondaires */
 .projects {
     text-align: right;
-    margin: 20% 10% auto 10%;
+    margin: 15% 10% auto 10%;
 }
 .about {
     margin: clamp(2%, 2vw, 5%) clamp(10%, 20%, 25%) auto clamp(10%, 20%, 25%);
